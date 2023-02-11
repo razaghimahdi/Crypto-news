@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_micro">4dp</dimen>
+    <dimen name="margin_microX">6dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_largeX">55dp</dimen>
+    <dimen name="margin_Xlarge">64dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="spacing_micro">4dp</dimen>
+
+    <!--TextViw Size-->
+    <dimen name="text_size_0">11sp</dimen>
+    <dimen name="text_size_1">12sp</dimen>
+    <dimen name="text_size_2">13sp</dimen>
+    <dimen name="text_size_3">14sp</dimen>
+    <dimen name="text_size_4">15sp</dimen>
+    <dimen name="text_size_5">16sp</dimen>
+    <dimen name="text_size_6">17sp</dimen>
+    <dimen name="text_size_7">18sp</dimen>
+    <dimen name="text_size_8">19sp</dimen>
+    <dimen name="text_size_9">20sp</dimen>
+    <dimen name="text_size_10">21sp</dimen>
+
+    <!-- added by abozar -->
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+
+    <dimen name="text_size_fib">16dp</dimen>
+    <dimen name="text_size_edit_text">16dp</dimen>
+    <dimen name="text_size_toolbar">17dp</dimen>
+    <dimen name="text_size_font_icon">26dp</dimen>
+
+    <!--Radius-->
+    <dimen name="radius_card">8dp</dimen>
+    <dimen name="radius_chip">6dp</dimen>
+    <dimen name="radius_fib">8dp</dimen>
+    <dimen name="radius_edit_text">8dp</dimen>
+    <dimen name="radius_dialog">20dp</dimen>
+
+    <dimen name="padding_fib_icon">16dp</dimen>
+    <dimen name="size_fib_icon">22dp</dimen>
+
+    <!--Elevation-->
+    <dimen name="elevation_fib_default">0dp</dimen>
+    <dimen name="elevation_fib">6dp</dimen>
+    <dimen name="elevation_card">6dp</dimen>
+
+    <!--Height-->
+    <dimen name="height_fib">50dp</dimen>
+    <dimen name="height_bityon_edit_text">50dp</dimen>
+
+    <dimen name="text_icon">26dp</dimen>
+    <dimen name="text_icon_clear">25dp</dimen>
+
+
+    <dimen name="padding_horizontal_edit_text">8dp</dimen>
+    <dimen name="padding_vertical_edit_text">8dp</dimen>
+    <dimen name="padding_toolbar_button">12dp</dimen>
+
+    <dimen name="height_elevation_toolbar">1.2dp</dimen>
+    <dimen name="size_tv_icon_small">22dp</dimen>
+    <dimen name="size_lottie_loading">115dp</dimen>
+    <dimen name="width_retry_button">185dp</dimen>
+
+    <dimen name="corner_radius_normal">16dp</dimen>
+    <dimen name="corner_radius_small">8dp</dimen>
+    <dimen name="height_divider">2dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_micro">4dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+
+    <dimen name="fib_divider_width">1dp</dimen>
+    <dimen name="fib_divider_height">8dp</dimen>
+    <dimen name="size_lottie_loading_small">70dp</dimen>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    android:layout_margin="6dp"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:background="@android:color/transparent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:orientation="vertical">
+
+            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:text="@string/help"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/shape_circle_positive" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                    style="@style/TextAppearance.Medium01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/positive_news"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/shape_circle_negative" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                    style="@style/TextAppearance.Medium01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/negative"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/shape_circle_natural" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                    style="@style/TextAppearance.Medium01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/natural"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+
+            <com.apadanah.crypto_news.presentation.util.custom_view.CustomButton
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ok"
+                style="@style/MaterialButtonDefault"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

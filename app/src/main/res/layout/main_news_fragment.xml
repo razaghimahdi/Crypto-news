@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/padding_small"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/imageViewInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="@dimen/padding_small"
+            android:rotation="180"
+            android:src="@drawable/info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+            style="@style/TextAppearance.Title01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/news"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingStart="@dimen/padding_normal"
+            android:paddingEnd="@dimen/padding_normal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/search"
+                    android:textSize="@dimen/text_size_8"
+                    style="@style/TextAppearance.Medium01"  />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/radius_card"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:padding="@dimen/padding_small"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="8">
+
+
+                                    <com.google.android.material.chip.ChipGroup
+                                        android:id="@+id/chip_group"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:chipSpacingVertical="4dp" >
+
+
+                                        <com.apadanah.crypto_news.presentation.util.auto_complete_text.InstantAutoCompleteTextView
+                                            android:id="@+id/edtSearch"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:background="@android:color/transparent"
+                                            android:focusedByDefault="false"
+                                            android:imeOptions="actionSearch"
+                                            android:maxLines="1"
+                                            android:hint="@string/search"
+                                            android:inputType="text"
+                                            android:minWidth="150dp"
+                                            android:layoutDirection="ltr"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+
+                                    </com.google.android.material.chip.ChipGroup>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="55dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:foreground="?attr/selectableItemBackground"
+                                        android:id="@+id/imgViewSearch"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="@dimen/padding_small"
+                                        android:src="@drawable/ic_baseline_search_24"
+                                        app:tint="@color/loadingGrey" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.apadanah.crypto_news.presentation.util.custom_view.CustomButton
+                    android:id="@+id/btnShowFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_filter_list_24"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    style="@style/MaterialButtonDefault"
+                    android:text="@string/filter_title"
+                    android:drawablePadding="@dimen/padding_micro"
+                    android:drawableTint="@color/white"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:iconSize="35dp"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal" />
+
+            </LinearLayout>
+
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/emptyList"
+                        layout="@layout/include_empty_list" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        tools:listitem="@layout/custom_news_item_main" />
+
+
+                </LinearLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+</LinearLayout>

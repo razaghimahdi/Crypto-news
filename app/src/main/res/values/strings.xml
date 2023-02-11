@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Crypto-news</string>
+    <string name="failed_network_title">Faild to connect</string>
+    <string name="failed_network_description">Something gets wrong, maybe it\'s from server, please try again</string>
+    <string name="ok">OK</string>
+    <string name="read_more">Read More</string>
+    <string name="list_is_empty">Sorry, List is empty!</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter:</string>
+    <string name="filter_title">Filter</string>
+    <string name="blogs">Blogs</string>
+    <string name="something_wrong">Something wrong! Please try again.</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+    <string name="source">Source</string>
+    <string name="type">Type</string>
+    <string name="article">Article</string>
+    <string name="video">Video</string>
+    <string name="sort_by">Sort By</string>
+    <string name="newest">Newest</string>
+    <string name="none">None</string>
+    <string name="oldest">Oldest</string>
+    <string name="rank">Rank</string>
+    <string name="topic">Topic</string>
+    <string name="item_selected">Item Selected</string>
+    <string name="sorry">Sorry</string>
+    <string name="news">News</string>
+    <string name="help">Help</string>
+    <string name="positive_news">Positive</string>
+    <string name="negative">Negative</string>
+    <string name="natural">Natural</string>
+    <string name="detail">Detail</string>
+</resources>

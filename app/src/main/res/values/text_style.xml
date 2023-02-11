@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="MyCustomTabWidget" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontFamily">@font/font_medium</item>
+        <item name="android:fontFamily">@font/font_medium</item>
+    </style>
+
+
+    <style name="ToolbarTitleTextView">
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+
+    <style name="TextAppearance.Medium01">
+        <item name="android:textSize">@dimen/text_size_4</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="TextAppearance.Title01">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">@dimen/text_size_6</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextAppearance.Title">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_6</item>
+    </style>
+
+    <style name="TextAppearance.Title.Bold">
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_6</item>
+    </style>
+
+    <style name="TextAppearance.Normal">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_5</item>
+    </style>
+
+    <style name="TextAppearance.Normal.Bold">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="TextAppearance.Small">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_3</item>
+    </style>
+
+    <style name="TextAppearance.XSmall">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_2</item>
+    </style>
+
+    <style name="TextAppearance.XXSmall">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_1</item>
+    </style>
+
+    <style name="TextAppearance.Hint">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_4</item>
+    </style>
+
+    <style name="TextAppearance.Hint.Bold">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="TextAppearance.Hint.Small">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_2</item>
+    </style>
+
+</resources>

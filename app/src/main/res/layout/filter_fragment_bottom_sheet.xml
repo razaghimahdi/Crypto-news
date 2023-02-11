@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <View
+            android:layout_width="75dp"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/grey_400" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/margin_micro"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_filter_list_24" />
+
+            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_microX"
+                android:layout_marginEnd="@dimen/margin_microX"
+                android:text="@string/filter_title"
+                style="@style/TextAppearance.Title01" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:text="@string/reset"
+            android:textColor="@color/green_500"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_small"
+                android:layout_marginBottom="@dimen/margin_largeX">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeTopic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingStart="@dimen/padding_micro"
+                        android:paddingTop="@dimen/padding_small"
+                        android:paddingBottom="@dimen/padding_small">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/topic"
+                                android:textStyle="bold" />
+
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                                android:id="@+id/txtSourceSelectedCountTopic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_micro"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="@dimen/text_size_0"
+                                tools:text="(1 Item Selected)" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgViewArrowTopic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/arrow_right" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearExpandTopic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/chipsGroupTopic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:chipSpacingVertical="6dp"
+                            app:singleLine="false"
+                            app:singleSelection="false"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeSource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingStart="@dimen/padding_micro"
+                        android:paddingTop="@dimen/padding_small"
+                        android:paddingBottom="@dimen/padding_small">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/source"
+                                android:textStyle="bold" />
+
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                                android:id="@+id/txtSourceSelectedCountSource"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_micro"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="@dimen/text_size_0"
+                                tools:text="(1 Item Selected)" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgViewArrowSource"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/arrow_right" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearExpandSource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/chipsGroupSource"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:chipSpacingVertical="6dp"
+                            app:singleLine="false"
+                            app:singleSelection="false"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingStart="@dimen/padding_micro"
+                        android:paddingTop="@dimen/padding_small"
+                        android:paddingBottom="@dimen/padding_small">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/type"
+                                android:textStyle="bold" />
+
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                                android:id="@+id/txtSourceSelectedType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_micro"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="@dimen/text_size_0"
+                                tools:text="(1 Item Selected)" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgViewArrowType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/arrow_right" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearExpandType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/chipsGroupType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:chipSpacingHorizontal="6dp"
+                            app:singleSelection="true">
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomChip
+                                android:id="@+id/chipsArticle"
+                                style="@style/Chip.Choice.Selectable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/article" />
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomChip
+                                android:id="@+id/chipsVideo"
+                                style="@style/Chip.Choice.Selectable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/video"  />
+
+                        </com.google.android.material.chip.ChipGroup>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeSort"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingStart="@dimen/padding_micro"
+                        android:paddingTop="@dimen/padding_small"
+                        android:paddingBottom="@dimen/padding_small">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sort_by"
+                                android:textStyle="bold" />
+
+
+                            <com.apadanah.crypto_news.presentation.util.custom_view.CustomTextView
+                                android:id="@+id/txtSourceSelectedSort"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_micro"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="@dimen/text_size_0"
+                                tools:text="(1 Item Selected)" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgViewArrowSort"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/arrow_right" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearExpandSort"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupSort"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checkedButton="@+id/radioButtonNewest"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/radioButtonNewest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/newest" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonOldest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/oldest" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonRank"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rank" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.apadanah.crypto_news.presentation.util.custom_view.CustomButton
+                android:id="@+id/btnApply"
+                style="@style/MaterialButtonDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/apply" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
