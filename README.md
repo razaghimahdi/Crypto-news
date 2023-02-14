@@ -3,7 +3,8 @@
 ## Developed by Mahdi Razzaghi Ghaleh
 
 #### A project base MVI Architecture
-#### Make sure to add token in `build.gradle` to make API works.
+#### Make sure to add api key in `build.gradle` to make API works.
+> how to get that? get the api key from [cryptonews-api.com](https://cryptonews-api.com).
 
 | Main | Filtering |  
 | :---: | :---: |
