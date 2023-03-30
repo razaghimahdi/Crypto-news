@@ -1,10 +1,10 @@
 # Crypto News
 
 ## Introduction:
-Crypto News is an open-source Android Kotlin application that displays up-to-date news about cryptocurrencies. 
-It is developed by Mahdi Razzaghi Ghaleh, with a base MVI architecture using use-cases. 
-The app uses Retrofit to retrieve data from the network and Koin for dependency injection. 
-It also uses Glide to load images.
+Crypto News is an open-source Android Kotlin application that provides users with the latest news about cryptocurrencies.
+The app is designed by Mahdi Razzaghi Ghaleh and implemented with an MVI architecture using use-cases. 
+To retrieve data from the network, it uses Retrofit, and Dependency Injection is done using Koin. 
+Additionally, Glide is employed to load images.
 
 
 ## Features:
@@ -35,8 +35,8 @@ To make the app fast, efficient, and user-friendly, several technologies and lib
 3. Glide: Glide is a fast and powerful image loading library that enables images to load seamlessly in the app.
 
 ## Conclusion:
-The Crypto News Android Kotlin application is a simple yet powerful app that helps users stay informed about the latest crypto news. 
-With its MVI architecture, paging, filtering, and searching features, the app provides a seamless and user-friendly experience. 
-Additionally, with Retrofit, Koin, and Glide, the app loads fast and efficiently.
+Crypto News enables users to stay informed on the latest developments in the cryptocurrency industry. 
+Utilising an MVI architecture, paging, filtering, and searching capabilities, the app provides a seamless and friendly user experience. 
+With the efficient technologies and libraries employed, such as Retrofit, Koin, and Glide, the app ensures a fast and smooth performance.
 
   
