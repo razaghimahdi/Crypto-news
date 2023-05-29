@@ -24,7 +24,7 @@ To get the API key, you can visit `cryptonews-api`.com and follow the instructio
 
 | Main | Filtering |  
 | :---: | :---: |
-| ![](screenshots/6.jpg) | ![](screenshots/2.jpg)  |  
+| <img src="screenshots/6.jpg" width="300"/> | <img src="screenshots/2.jpg" width="300"/>  | 
 
 [More ScreenShot](https://github.com/razaghimahdi/Crypto-news/tree/master/screenshots)
 
