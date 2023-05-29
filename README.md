@@ -6,6 +6,8 @@ The app is designed by Mahdi Razzaghi Ghaleh and implemented with an MVI archite
 To retrieve data from the network, it uses Retrofit, and Dependency Injection is done using Koin. 
 Additionally, Glide is employed to load images.
 
+## Give a Star! ⭐
+If you like or are using this project to learn or start your solution, please give it a star. Thanks!
 
 ## Features:
 The app is built on an MVI architecture, which stands for Model-View-Intent. 
