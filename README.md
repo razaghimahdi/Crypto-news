@@ -24,8 +24,9 @@ To get the API key, you can visit `cryptonews-api`.com and follow the instructio
 
 | Main | Filtering |  
 | :---: | :---: |
-| ![](screenshots/1.jpg) | ![](screenshots/2.jpg)  |  
+| ![](screenshots/6.jpg) | ![](screenshots/2.jpg)  |  
 
+[More ScreenShot](https://github.com/razaghimahdi/Crypto-news/tree/master/screenshots)
 
 ## Technology and Library Used:
 To make the app fast, efficient, and user-friendly, several technologies and libraries were employed. These include:
